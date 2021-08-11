@@ -48,5 +48,5 @@
     }
     let gen = controlFlow(10,20);
     console.log(gen.next());
-    console.log(gen.next());
+    console.log(gen.next(50));
 })();
