@@ -43,9 +43,9 @@
   //    console.log(value)
   //  });
   let promises =[gen.next(),gen.next(),gen.next()];
-  for(let promise of promises){
-    promise.then(value=>{
-     console.log(value)
-    })
+ (async function(){ 
+   for await(let p of promises){
+      console.log(p)
   }
+})();
 })();
